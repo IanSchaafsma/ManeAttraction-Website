@@ -1,0 +1,28 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    width: 70%;
+    height: 80vh;
+    gap: 2rem;
+
+    &__title{
+        font-size: 300%;
+
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+        &Date{  
+            color: gray;
+        }
+
+        &Text{
+            font-weight: 300;
+            line-height: 1.6;
+        }
+    }
+}

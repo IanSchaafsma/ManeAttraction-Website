@@ -1,0 +1,19 @@
+@use "./abstracts/reset";
+@use "./base.scss";
+
+
+// homepage
+@use "./components/navigation/navigation.scss";
+@use "./components/banner/banner.scss";
+@use "./components/footer/footer.scss";
+
+@use "./components/news/news.scss";
+
+// aboutpage
+@use "./components/about/about.scss";
+
+// releasespage
+@use "./components/releases/releases.scss";
+
+// historypage
+@use "./components/history/history.scss";

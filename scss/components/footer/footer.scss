@@ -1,0 +1,28 @@
+.footer{
+    width: 100%;
+    min-height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-right: 4rem;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    z-index: 1;
+    background: black;
+
+    &__text{
+        color: white;
+    }
+
+    &__privacy{
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
