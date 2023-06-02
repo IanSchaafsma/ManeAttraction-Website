@@ -10,56 +10,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="js/main.js" defer></script>
+    <script src="js/Fontawesome/061ded24e3.js" defer></script>
+
     <title>History Page</title>
 </head>
-<nav class="nav">
-    <figure class="nav__figure">
-        <a href="index.html"><img src="img/logo_2.jpg" alt="" class="nav__logo"></a>
-    </figure>
-    <ul class="nav__list">
-        <li class="nav__listItem"><a href="about.html" class="nav__link">About</a></li>
-        <li class="nav__listItem"><a href="releases.html" class="nav__link">Releases</a></li>
-        <li class="nav__listItem"><a href="musicians.html" class="nav__link">Musicians</a></li>
-        <li class="nav__listItem"><a href="history.html" class="nav__link">History</a></li>
-        <li class="nav__listItem"><a href="media.html" class="nav__link">Media</a></li>
-        <li class="nav__listItem"><a href="store.html" class="nav__link">Store</a></li>
-        <li class="nav__listItem"><a href="guitarcorner.html" class="nav__link">Jeroen's guitar corner</a></li>
-        <li class="nav__listItem"><a href="contact.html" class="nav__link">Contact</a></li>
-    </ul>
-</nav>
 
-<main class="history">
-    <h1 class="historyTitle">History</h1>
-    <section class="historyStory">
-        <img src="img/Fatallyflawed-716x1024.jpg" alt="" class="historyStory__img">
-        <div class="historyStory__textWrapper">
-            <h2 class="historyStory__title">Fatally flawed 1991 -1997</h2>
-            <p class="historyStory__text">
-                <span>The band started with just 2 members formed by Koen Spaansen and Jeroen Schaafsma. Later joined by Joost Bonenkamp and Jack v/d Fluit. Jeroen started songwriting at the age of 16, but they first saw the light with Fatally flawed in 1991. Inspired by the 80’s the songs were hard to place in a specific corner. Rock for sure but probably all songs had melody, a catchy chorus or acoustic elements. Some of the first songs were “Out with the girls”, “Lady of the night” and “Let the goodtimes rock”</span> 
-
-                <span>After a time of rehearsing in a fashion boutique the band went out to play local bars and events. Playing original songs was always the main goal, but some covers were played as well from Guns ‘n Roses, White lion, The free etc.</span> 
-                
-                <span>Around 1995 the band went out in search of a recording studio to see if they were able to put some of their music on CD. This led the band to Amsterdam. In 1996 at the Giessenhof studio Fatally flawed recorded 3 songs in 4 days with Holger Schwedt as engineer and Frank Pels as producer. The single CD contained the title track “First train to paradise” as well as “Hot shot” and “Wasted time”</span> 
-                
-                <span>Left the first flyer</span> 
-            </p>
-        </div>
-    </section>
-    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/389594097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-257673462" title="Psycho Maniacs Music" target="_blank" style="color: #cccccc; text-decoration: none;">Psycho Maniacs Music</a> · <a href="https://soundcloud.com/user-257673462/first-train" title="First Train" target="_blank" style="color: #cccccc; text-decoration: none;">First Train</a></div>
-    <section class="historyGallery">
-        <img class="historyGallery__img" src="img/ff5.jpg" alt="">
-        <img class="historyGallery__img" src="img/CD_INS_W.jpg" alt="">
-        <img class="historyGallery__img" src="img/FF94.jpg" alt="">
-    </section>
-</main>
-
-
-
-
-<footer class="footer">
-    <p class="footer__text">© Copyright 2021 All rights reserved by Mane Attraction Music – Psycho Maniacs Music</p>
-</footer>
-<body>
+<body id="body--js">
+    <nav class="nav" id="nav--js">
+        <figure class="nav__figure">
+            <a href="index.html"><img src="img/logo_2.jpg" alt="" class="nav__logo"></a>
+        </figure>
+        <ul class="nav__list" id="nav__list--js">
+            <li class="nav__listItem"><a href="about.html" class="nav__link">About</a></li>
+            <li class="nav__listItem"><a href="releases.html" class="nav__link">Releases</a></li>
+            <li class="nav__listItem"><a href="musicians.html" class="nav__link">Musicians</a></li>
+            <li class="nav__listItem"><a href="history.html" class="nav__link">History</a></li>
+            <li class="nav__listItem"><a href="media.html" class="nav__link">Media</a></li>
+            <li class="nav__listItem"><a href="store.html" class="nav__link">Store</a></li>
+            <li class="nav__listItem"><a href="guitarcorner.html" class="nav__link">Jeroen's guitar corner</a></li>
+            <li class="nav__listItem"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__menu" id="nav__menu--js"><i id="nav__menuIcon--js" class="fa-solid fa-bars"></i></button>
+    </nav>
     
+    <main class="history">
+        <h1 class="historyTitle">History</h1>
+        <section class="historyStory">
+            <img src="img/Fatallyflawed-716x1024.jpg" alt="" class="historyStory__img">
+            <div class="historyStory__textWrapper">
+                <h2 class="historyStory__title">Fatally flawed 1991 -1997</h2>
+                <p class="historyStory__text">
+                    <span>The band started with just 2 members formed by Koen Spaansen and Jeroen Schaafsma. Later joined by Joost Bonenkamp and Jack v/d Fluit. Jeroen started songwriting at the age of 16, but they first saw the light with Fatally flawed in 1991. Inspired by the 80’s the songs were hard to place in a specific corner. Rock for sure but probably all songs had melody, a catchy chorus or acoustic elements. Some of the first songs were “Out with the girls”, “Lady of the night” and “Let the goodtimes rock”</span> 
+    
+                    <span>After a time of rehearsing in a fashion boutique the band went out to play local bars and events. Playing original songs was always the main goal, but some covers were played as well from Guns ‘n Roses, White lion, The free etc.</span> 
+                    
+                    <span>Around 1995 the band went out in search of a recording studio to see if they were able to put some of their music on CD. This led the band to Amsterdam. In 1996 at the Giessenhof studio Fatally flawed recorded 3 songs in 4 days with Holger Schwedt as engineer and Frank Pels as producer. The single CD contained the title track “First train to paradise” as well as “Hot shot” and “Wasted time”</span> 
+                    
+                    <span>Left the first flyer</span> 
+                </p>
+            </div>
+        </section>
+
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/389594097&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-257673462" title="Psycho Maniacs Music" target="_blank" style="color: #cccccc; text-decoration: none;">Psycho Maniacs Music</a> · <a href="https://soundcloud.com/user-257673462/first-train" title="First Train" target="_blank" style="color: #cccccc; text-decoration: none;">First Train</a></div>
+       
+        <section class="historyGallery">
+            <a href="img/ff5.jpg" class="historyGallery__imgContainer   ">
+                <img class="historyGallery__img" src="img/ff5.jpg" alt="">
+            </a>
+            <a href="img/CD_INS_W.jpg" class="historyGallery__imgContainer  ">
+                <img class="historyGallery__img" src="img/CD_INS_W.jpg" alt="">
+            </a>
+            <a href="img/FF94.jpg" class="historyGallery__imgContainer  ">
+                <img class="historyGallery__img" src="img/FF94.jpg" alt="">
+            </a>
+        </section>
+        
+    </main>
+    
+    
+    
+    
+    <footer class="footer">
+        <p class="footer__text">© Copyright 2021 All rights reserved by Mane Attraction Music – Psycho Maniacs Music</p>
+        <a href="privacy&policy.html" class="footer__privacy">Privacy Policy</a>
+    </footer>
 </body>
 </html>

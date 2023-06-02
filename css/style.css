@@ -25,7 +25,7 @@ body {
   padding-right: 4rem;
   z-index: 1;
   background: white;
-  box-shadow: 0 0 2rem 0 black;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.248);
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
 }
 .nav__figure {
@@ -48,6 +48,40 @@ body {
 }
 .nav__link:hover {
   text-decoration: underline;
+}
+.nav__menu {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: black;
+  display: none;
+}
+.nav__menu:hover {
+  cursor: pointer;
+}
+
+.nav--menu {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  padding-top: 4rem;
+  gap: 2rem;
+  z-index: 1;
+  background: white;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.248);
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
+}
+
+.nav__list--menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  font-size: 120%;
 }
 
 .banner {
@@ -134,7 +168,7 @@ body {
   flex-direction: column;
   padding: 4rem;
   width: 70%;
-  height: 80vh;
+  height: 100%;
   gap: 2rem;
 }
 .about__title {
@@ -235,11 +269,197 @@ body {
   width: 100%;
   height: 40rem;
   display: flex;
+  gap: 2rem;
 }
 .historyGallery__img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: contain;
+}
+.historyGallery__imgContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 70%;
+  height: 80vh;
+  gap: 2rem;
+}
+.contact__title {
+  font-size: 300%;
+}
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact__cardType {
+  color: gray;
+}
+.contact__cardInfo {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 81.25rem) {
+  .releases {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+  }
+  .releases__title {
+    font-size: 300%;
+  }
+  .releases__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .releases__listItem {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.205);
+    padding: 2rem;
+  }
+  .releases__heading {
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .releases__img {
+    width: 30rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  .releases__musicians {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .releases__info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .releases__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .historyStory__textWrapper {
+    padding-right: 10rem;
+  }
+}
+@media screen and (max-width: 68.75rem) {
+  .nav {
+    min-height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    padding-right: 4rem;
+    z-index: 1;
+  }
+  .nav__list {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+    font-size: 120%;
+    display: none;
+  }
+  .nav__menu {
+    display: block;
+  }
+  .nav--menu {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    padding-top: 4rem;
+    gap: 2rem;
+    z-index: 1;
+    background: white;
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.248);
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
+  }
+  .nav__list--menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    font-size: 120%;
+  }
+  .about {
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+  }
+  .historyGallery {
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 62.5rem) {
+  .historyStory {
+    flex-direction: column;
+  }
+  .historyStory__textWrapper {
+    padding-right: 4rem;
+  }
+  .historyStory__img {
+    width: 40rem;
+    aspect-ratio: 1/1.5;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 43.75rem) {
+  .footer {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    padding: 2rem;
+    padding-right: 4rem;
+    z-index: 1;
+    gap: 1rem;
+  }
+  .historyGallery {
+    width: 85%;
+    height: 85%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .nav {
+    justify-content: flex-end;
+  }
+  .nav__figure {
+    width: 35rem;
+  }
+  .nav--menu {
+    justify-content: flex-start;
+    padding: 0;
+    padding-top: 4rem;
+    gap: 2rem;
+  }
+  .releases__img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  .historyStory__img {
+    width: 35rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

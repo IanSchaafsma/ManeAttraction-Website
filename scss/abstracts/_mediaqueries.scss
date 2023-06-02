@@ -1,0 +1,234 @@
+@media screen and (max-width: 81.25rem) { //1300px width
+    // releases
+    .releases{
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        width: 100%;
+        height: 100%;
+        gap: 2rem;
+    
+        &__title{
+            font-size: 300%;
+        }
+    
+        &__list{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            
+            &Item{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.205);
+                padding: 2rem;
+
+
+            }
+        }
+    
+        &__heading{
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+    
+        &__img{
+            width: 30rem;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+    
+        }
+    
+        &__musicians{
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+        }
+    
+        &__info{
+            display: flex;
+            flex-direction: column;
+            font-weight: 300;
+        }
+    
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+
+    // history
+
+    .history{
+        &Story{
+            &__textWrapper{
+                padding-right: 10rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 68.75rem) { // 1100px width
+
+    // header
+    .nav{
+        min-height: 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+        padding-right: 4rem;
+        // position: fixed;
+        // top: 0;
+        // left: 0;                   PADDING TOP
+        z-index: 1;
+    
+        &__list{
+            display: flex;
+            list-style: none;
+            gap: 4rem;
+            font-size: 120%;
+            display: none;
+        }
+
+        &__menu{
+            display: block;
+        }
+    
+    }
+
+    .nav--menu{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        padding-top: 4rem;
+        gap: 2rem;
+        // position: fixed;
+        // top: 0;
+        // left: 0;                   PADDING TOP
+        z-index: 1;
+        background: white;
+        box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.248);
+        border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
+    }
+    .nav__list--menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+        font-size: 120%;
+    }
+
+    // about page
+    .about{
+        padding: 4rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    // history
+
+   .historyGallery{
+    width: 50%;
+    height: 50%;
+    flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 62.5rem) { // 1000px width
+    // history
+
+    .history{
+        &Story{
+            flex-direction: column;
+
+            &__textWrapper{
+                padding-right: 4rem;
+            }
+
+            &__img{
+                width: 40rem;
+                aspect-ratio: 1/1.5;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 43.75rem) { // 700px width
+    
+    // footer 
+    .footer{
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        padding: 2rem;
+        padding-right: 4rem;
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        z-index: 1;
+        gap: 1rem;
+        
+    }
+
+    // history
+
+   .historyGallery{
+    width: 85%;
+    height: 85%;
+    flex-direction: column;
+    }
+} 
+
+@media screen and (max-width: 31.25rem) { // 500px width
+  
+    // header
+    .nav{
+        justify-content: flex-end;
+
+        &__figure{
+            width: 35rem;
+        }
+    }
+
+    .nav--menu{
+        justify-content: flex-start;
+        padding: 0;
+        padding-top: 4rem;
+        gap: 2rem;
+    } 
+    
+
+    // releases
+
+    .releases{
+    
+        &__img{
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
+    }
+
+    // history
+
+    .history{
+        &Story{  
+            &__img{
+                width: 35rem;
+            }
+    
+        }
+    }
+     
+}
+
+    
