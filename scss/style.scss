@@ -24,10 +24,14 @@
 // mediapage
 @use "./components/media/media.scss";
 
+// storepage
+@use "./components/store/store.scss";
+
+// guitarcornerpage
+@use "./components/guitarcorner/guitarcorner.scss";
+
 // contactpage
 @use "./components/contact/contact.scss";
-
-
 
 // privacy&policy page
 @use "./components/privacypolicy/privacypolicy.scss";

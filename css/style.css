@@ -163,6 +163,16 @@ body {
   line-height: 1.6;
 }
 
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -178,6 +188,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
 }
 .about__cardDate {
   color: gray;
@@ -202,6 +214,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
 }
 .releases__listItem {
   display: flex;
@@ -249,6 +263,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
 }
 .members__member {
   display: flex;
@@ -295,6 +311,8 @@ body {
 .historyStory {
   display: flex;
   gap: 4rem;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
 }
 .historyStory__textWrapper {
   padding-right: 20rem;
@@ -347,6 +365,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
 }
 .mediaCollection__item {
   list-style: none;
@@ -396,6 +416,68 @@ body {
   background: gray;
 }
 
+.store {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.store__title {
+  font-size: 300%;
+}
+.store__items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
+}
+
+.guitarCorner {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+}
+.guitarCorner__title {
+  font-size: 300%;
+}
+
+.guitars {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.205);
+  animation-name: slideIn;
+  animation-duration: 0.6s;
+}
+.guitars__title {
+  font-size: 4rem;
+}
+.guitars__info {
+  font-weight: 300;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.guitars__images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.guitars__image {
+  width: 30rem;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -411,6 +493,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  animation-name: slideIn;
+  animation-duration: 0.6s;
 }
 .contact__cardType {
   color: gray;
