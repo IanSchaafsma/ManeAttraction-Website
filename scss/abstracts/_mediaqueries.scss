@@ -59,6 +59,16 @@
         }
     }
 
+    // musicians 
+
+    .members{
+    
+        &__member{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     // history
 
     .history{
@@ -179,6 +189,19 @@
         
     }
 
+    // musicians 
+
+    .members{
+    
+        &__member{
+
+            &Img{
+                width: 30rem;
+                
+            }
+        }
+    }
+
     // history
 
    .historyGallery{
@@ -205,7 +228,6 @@
         padding-top: 4rem;
         gap: 2rem;
     } 
-    
 
     // releases
 
@@ -232,3 +254,8 @@
 }
 
     
+@media screen and (min-width: 37.5rem) { // 600px width
+    .about{
+        height: 80vh;
+    }
+}

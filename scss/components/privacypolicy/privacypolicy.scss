@@ -1,27 +1,21 @@
-.about{
+.privacyPolicy{
+
     display: flex;
     flex-direction: column;
     padding: 4rem;
     width: 70%;
     height: 100%;
     gap: 2rem;
-
+    
     &__title{
         font-size: 300%;
     }
 
-    &__card{
+    &__info{
+        font-weight: 300;
+        line-height: 1.6;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        
-        &Date{  
-            color: gray;
-        }
-
-        &Text{
-            font-weight: 300;
-            line-height: 1.6;
-        }
+        gap: 2rem;   
     }
 }
