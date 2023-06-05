@@ -131,6 +131,11 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+.news__cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .news__title {
   font-size: 300%;
 }
